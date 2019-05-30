@@ -48,8 +48,8 @@ body{
     text-decoration:none;
     display:inline-block;
     line-height: 40px;
-    margin-left:10px; nbn                                                         b
-    padding:0 10px;
+    margin-left:10px;                                                       b
+    padding: 0 10px;
 }
 .ding .din .di1 :hover{
     background-color: #fff;
@@ -61,38 +61,78 @@ body{
 .ding .din .di2{
     float:right;
 }
+.da{
+    width: 100%;
+    height:auto;
+    background-color: white;
+}
 .suo{
     height:100px;
     width:1226px;
     
     margin:0 auto;
 }
-.suo .sou{
+/* .suo .sou{
     height:100px;
     width:auto;
     
     float:left;
-}
-.suo .sou1{
-    float: right;
-}
+} */
 .suo .sou2 img{
     width:55px;
     height:55px;
     display:block; 
     margin:0 auto;
     margin-top: 20px;
+    float:left;
 }
 .suo .sou3{
-    margin-right:auto;
+    margin-left:180px;
+    float:left;
+    height:100px;
+    width:auto;
 }
 .sou4{
     width:297px;
-    height:100px;
+    height:50px;
     float:right;
+    box-sizing: border-box;
+    position:relative; 
 }
-.sou4:hover{
-    /* border:1px solid #424242; */
+.sou4:hover .sou5{
+    border:1px solid #424242;
+    transition: 1s;
+}
+.sou4:hover .sou6{
+    border:1px solid #424242;
+    border-left: 0;
+    transition: 1s;
+}
+.sou7{
+    position:absolute; 
+    top:40px;
+    right:130px;
+    background-color: #EEEEEE;
+    color:#757575;
+    font-size:16px;
+}
+.sou8{
+    position:absolute; 
+    top:40px;
+    right:60px;
+    background-color: #EEEEEE;
+    color:#757575;
+    font-size:16px;
+}
+.sou7:hover{
+    background-color: #ffac13;
+    color:white;
+    transition: 0.3s;
+}
+.sou8:hover{
+    background-color: #ffac13;
+    color:white;
+    transition: 0.3s;
 }
 .sou5{
     width:245px;
@@ -121,19 +161,22 @@ body{
 .sou6:hover i{
     color: #fff;
 }
-.sou1 .nan{
+/* .sou4:hover{
+    border:1px solid #000;
+} */
+.sou3 .nan{
     float: right;
     margin:0px 10px;
 }
 
-.sou1 .nan a{
+.sou3 .nan a{
     color:#333;
     font-size:16px;
     text-decoration:none;
     display:inline-block;
     line-height: 100px;
 }
-.sou1 .nan a:hover{
+.sou3 .nan a:hover{
     color:#ff6700;
 }
 .bo{
@@ -169,18 +212,20 @@ body{
     line-height:42px;
     text-decoration: none;
     position:relative;
+    font-size: 14px;
 }
 .boz a:hover{
     background-color:#ff6700;
 }
-.boz a img{
-    width:20px;
-    height:20px;
+.boz .iconfont{
     position:absolute;
     top:0;
     bottom: 0;
     margin:auto;
     right:10px;
+    font-size:16px;
+    color:white;
+    line-height: 42px;
 }
 .bo .bo1{
     width:41px;
@@ -197,10 +242,11 @@ body{
     font-size:40px;
 }
 .bo .iconfont{
-    font-size: 50px;
+    font-size: 40px;
+    color:#CED3D5;
 }
 .bo .bo1:hover{
-    box-shadow: 0 0 10px rgba(176, 176, 176, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 }
 .bo .bo2{
     width:41px;
@@ -218,6 +264,10 @@ body{
 }
 .bo .bo2:hover{
     background: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+.bo .bo2:hover .iconfont{
+    color:white;
 }
 .bo .bo3{
     width:auto;
@@ -242,8 +292,7 @@ body{
 }
 .lol{
     width:1226px;
-    height:auto;
-    background-color: #F0F0F0;
+    height:220px;
     margin-top:14px;
     margin-bottom:20px;
     margin:0 auto;
@@ -355,6 +404,21 @@ body{
     margin-bottom: 20px;
     text-align:center;
     text-decoration:none;
+    transition: all 0.3s;
+}
+.lol1:hover{
+    box-shadow: 0 0 10px rgba(176, 176, 176, 0.4);
+    transition: 0.3;
+}
+.chang{
+    width:1226px;
+    height:150px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+.chang img{
+    width:1226px;
+    height:120px;
 }
 .tou{
     width:1226px;
@@ -418,16 +482,19 @@ body{
     margin-bottom:14px;
     position:relative;
     overflow:hidden;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: all 0.3s;
 }
 .kk{
     width:234px;
     height:75px;
     position:absolute; 
     top:300px;
+    left:0;
     background-color: #ff6700;
     transition: all 0.3s;
 }
-
 .o .k:hover{
     transform:translateY(-5px);
     transition: 1s;
@@ -440,14 +507,18 @@ body{
 .k .kk .kk1{
     font-size:12px;
     color:white;
-    text-align:center;
+    /* text-align:center; */
     margin: 0 20px;
     margin-top:10px;
+    /* display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical */
 }
 .k .kk .kk2{
     font-size:12px;
     color:rgba(255,255,255,0.6);;
-    text-align:center;
+    /* text-align:center; */
+    margin:3px 20px 0;
 }
 .o .right .k1{
     width:234px;
@@ -455,17 +526,25 @@ body{
 }
 .right .k a img{
     margin-top:20px;
-    margin-left:50px;
+    margin-left:30px;
     display:block;
     
+}
+.right .k .dog{
+    /* text-align:center; */
+    font-size:14px;
+    color:#333;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2
 }
 .right .k .dog{
     text-align:center;
     font-size:14px;
     color:#333;
-    
+    margin-top:10px;
+    margin-bottom:10px;
 }
-.right .k p{
+.right .k .cat{
     text-align:center;
     font-size:12px;
     color:#b0b0b0;
@@ -485,7 +564,7 @@ body{
     margin-right:10px;
 }
 .right .k1 .exposure{
-    margin-left:30px;
+    margin-left:0;
     margin-top:50px;
     font-size:14px;
     color:#333;
@@ -493,7 +572,7 @@ body{
 .right .k1 .price{
     font-size:12px;
     color:#ff6700;
-    margin:0px 110px 0px 10px;
+    margin:0px 110px 0px 0;
 }
 .a{
     display:block;
@@ -523,11 +602,13 @@ body{
     margin:0 auto;
     width:140px;
     height:140px;
+    margin-top: 20px;
 }
 .b .n .m{
     text-align:center;
     font-size:14px;
     color:#333;
+    margin-top:30px;
 }
 .b .n .k{
     margin-top:10px;
@@ -563,6 +644,7 @@ body{
     margin-bottom:20px;
     margin-top:20px;
     position:relative;
+    transition: all 0.3s;
 }
 .ff1{
     width:30px;
@@ -573,7 +655,7 @@ body{
     text-align:center;
     line-height:50px;
     position:absolute; 
-    top:150px;
+    top:170px;
     left:0;
     display:none;
 }
@@ -586,7 +668,7 @@ body{
     text-align:center;
     line-height:50px;
     position:absolute; 
-    top:150px;
+    top:170px;
     right:0;
     display:none;
 }
@@ -613,7 +695,7 @@ body{
     width:240px;
     margin:0 auto;
     text-decoration: none;
-    margin-top:5px;
+    margin-top:15px;
     color:#333;
     font-size:14px;
 }
@@ -624,7 +706,6 @@ body{
     padding: 0 10px 0 0;
     font-size: 12px;
     color: #b0b0b0;
-    margin:0 70px;
 }
 .f1 .f11{
     height:50px;
@@ -632,7 +713,7 @@ body{
 .f11 a{
     margin-top:20px;
     width:auto;
-    margin-left: 50px;
+    margin-left: 28px;
 }
 .skt{
     background-color: #F0F0F0;
@@ -652,6 +733,9 @@ body{
     margin-top:20px;
     border-top:2px solid #ffac13;
     position:relative; 
+    padding:0 35px;
+    box-sizing: border-box;
+    transition: all 0.3s;
 }
 .skt2:hover{
     transform:translateY(-5px);
@@ -666,10 +750,10 @@ body{
     height:10px;
     margin:0 auto;
     margin-top:50px;
-    margin-left:65px;
+    margin-left:30px;
 }
 .skt .skkt1{
-    margin-left:80px;
+    margin-left:45px;
 }
 .sktt{
     display:block; 
@@ -690,7 +774,7 @@ body{
     border:2px solid #ff6700;
 }
 .skkt1{
-    margin-right:30px;
+    margin-right:0;
 }
 .skt3{
     margin-right:0;
@@ -731,7 +815,7 @@ body{
     margin-top:10px;
 }
 .skt2 img{
-    white:216px;
+    width:216px;
     height:154px;
     display: block;
     margin:0 auto;
@@ -754,11 +838,16 @@ body{
     margin-right:14px;
     margin-bottom:20px;
     position:relative; 
+    transition: all 0.3s;
 }
 .omg2:hover{
     transform:translateY(-5px);
     transition: 1s;
-    box-shadow:0 0 10px 1px #333;
+    box-shadow: 0 0 10px rgba(176, 176, 176, 0.4);
+}
+.omg2:hover .omgg{
+    background:#ff6700;
+    border:2px solid #ff6700;
 }
 .omgg{
     width: 40px;
@@ -770,7 +859,7 @@ body{
     font-size: 20px;
     color:white;
     position:absolute; 
-    bottom:95px;
+    bottom:110px;
     left:20px;
     border:2px solid white;
 }
@@ -829,16 +918,26 @@ body{
     padding-bottom: 27px; 
     padding-left: 30px;
     background-color: white;
+    box-sizing: border-box;
+    line-height:26px;
 }
 .pan a{
     display:inline-block;
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 48px;
+    margin-left: 48px;
     text-decoration: none;
     color:#616161;
     font-size: 16px;
+    height:30px;
+    line-height: 20px;
+    box-sizing: border-box;
 }
+.pan .iconfont{
+    font-size:24px;
+    line-height:30px; 
+    display:inline-block;
+}
+
 .pan a:hover {
     color:#ff6700;
 }
@@ -889,7 +988,7 @@ body{
     color:#ff6700;
 }
 .ig .ig2{
-    width:271px;
+    width:257px;
     height:112px;
     float:right;
     border-left:1px solid black;
@@ -962,6 +1061,8 @@ body{
     left:67px;
     font-size:12px;
     text-decoration: none;
+    margin-top:2px;
+    color:#000;
 }
 .dizi a{
     text-decoration: none;
@@ -974,16 +1075,22 @@ body{
     position:absolute;
     top:64px;
     left:67px;
+    margin-top:5px;
+    color:#B0B0B7;
 }
 .dizi .p2{
     position:absolute;
     top:78px;
     left:67px;
+    margin-top:7px;
+    color:#B0B0B7;
 }
 .dizi .p3{
     position:absolute;
     top:92px;
     left:67px;
+    margin-top:7px;
+    color:#B0B0B7;
 }
 .dizi .he{
     width:auto;
@@ -991,39 +1098,39 @@ body{
 
     position:relative; 
 }
-.dizi .he .img1{
+.dizi .img1{
     width:83px;
     height:28px;
     position:absolute;
-    top:91px;
+    top:110px;
     left:57px;
 }
-.dizi .he .img2{
+.dizi .img2{
     width:83px;
     height:28px;
     position:absolute;
-    top:91px;
+    top:110px;
     left:140px;
 }
-.dizi .he .img3{
+.dizi .img3{
     width:83px;
     height:28px;
     position:absolute;
-    top:91px;
+    top:110px;
     left:223px;
 }
-.dizi .he .img4{
+.dizi .img4{
     width:83px;
     height:28px;
     position:absolute;
-    top:91px;
+    top:110px;
     left:306px;
 }
-.dizi .he .img5{
+.dizi .img5{
     width:83px;
     height:28px;
     position:absolute;
-    top:91px;
+    top:110px;
     left:389px;
 }
 .dizi .zuidi{
@@ -1035,13 +1142,22 @@ body{
     margin-top:150px;
 }
 .uuu{
-    width:20px;
+    width:30px;
     height:auto;
     background-color:white;
     position:fixed;
     bottom:5px;
     right:20px;
-    font-size: 20px;
+    padding: 3px;
+    border:1px solid #F5F5F5;
+}
+.uuu .iconfont{
+    display:block;  
+    font-size: 24px;
+    color:#999999;
+    border-bottom:1px solid #F5F5F5;
+    text-align:center;
+    margin:5px 0;
 }
 .uuu .iconfont:hover{
     color:#ff6700;
@@ -1070,7 +1186,7 @@ body{
 .phone-title{
     width: 1226px;
     height: 58px;
-    margin-top:220px;
+    margin-top:30px;
 }
 .phone-title>.itemS{
     font-size: 22px;
